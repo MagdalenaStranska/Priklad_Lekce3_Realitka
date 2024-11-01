@@ -41,7 +41,7 @@ const apartment = {
 //   document.body.innerHTML += "<p>Výměra bytu: apartment: "+ apartment.area.floorage + apartment.area.units +"</br> balcony: "+apartment.area.balcony + apartment.area.units+ "</p>"
 //   document.body.innerHTML += "<p>Celkova plocha bytu je:" + total + "sqm </p>"
 
-  document.body.innerHTML += "<p>Výměra bytu celkem: " + (apartment.area.floorage + apartment.area.balcony) + ' sqm' + "</p>"
+  document.body.innerHTML += "<p>Výměra bytu celkem: " + (apartment.area.floorage + apartment.area.balcony) + " " + apartment.area.units + "</p>"
 
 // let total = apartment.area.floorage + apartment.area.balcony;
 //   console.log(total);
@@ -49,11 +49,11 @@ const apartment = {
 //   document.body.innerHTML += "<p>Celkova plocha bytu je:" + total + "sqm </p>"
 //   document.body.innerHTML += apartment.area.floorage + apartment.area.balcony
 
-let mesto = apartment.city
-let mestskaCast = apartment.district
+const city = apartment.city
+const district = apartment.district
 
-document.body.innerHTML += "<p>Město: " + mesto + "</p>"
-document.body.innerHTML += "<p>Městská část: " + mestskaCast + "</p>"
+document.body.innerHTML += "<p>Město: " + city + "</p>"
+document.body.innerHTML += "<p>Městská část: " + district + "</p>"
 
 apartment.status = 'taken'
 document.body.innerHTML += "<p>Stav inzerátu: " + apartment.status + "</p>"
